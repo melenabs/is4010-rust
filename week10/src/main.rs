@@ -18,13 +18,6 @@ fn main() {
     println!("Uncomment one problem at a time and fix it!\n");
 
     // Uncomment problems one at a time after fixing them:
-    // problem_1();
-    // problem_2();
-    // problem_3();
-    // problem_4();
-    // problem_5();
-    // problem_6();
-    // problem_7();
 }
 
 // ============================================================================
@@ -43,7 +36,7 @@ fn problem_1() {
     println!("  The length of '{}' is {}.", s1, len);
 }
 
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &str) -> usize {
     s.len()
 }
 
@@ -121,9 +114,9 @@ fn problem_5() {
 }
 
 fn create_string() -> String {
-    let s = String::from("hello");
-    s
+    String::from("hello")
 }
+
 
 // ============================================================================
 // PROBLEM 6: Ownership in loops
