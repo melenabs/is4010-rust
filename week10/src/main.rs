@@ -17,8 +17,17 @@ fn main() {
     println!("Week 10: Mastering ownership and borrowing");
     println!("Uncomment one problem at a time and fix it!\n");
 
-    // Uncomment problems one at a time after fixing them:
+    problem_1();
+    problem_2();
+    problem_3();
+    problem_4();
+    problem_5();
+    problem_6();
+    problem_7();
 }
+
+    // Uncomment problems one at a time after fixing them:
+
 
 // ============================================================================
 // PROBLEM 1: Value used after move
