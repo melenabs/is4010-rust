@@ -26,8 +26,7 @@ fn main() {
     problem_7();
 }
 
-    // Uncomment problems one at a time after fixing them:
-
+// Uncomment problems one at a time after fixing them:
 
 // ============================================================================
 // PROBLEM 1: Value used after move
