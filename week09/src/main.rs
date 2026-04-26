@@ -44,7 +44,7 @@ fn main() {
 /// assert_eq!(add(-1, 1), 0);
 /// ```
 fn add(_a: i32, _b: i32) -> i32 {
-    todo!("Implement add")
+    _a + _b
 }
 
 /// Returns the product of `a` and `b`.
@@ -55,7 +55,7 @@ fn add(_a: i32, _b: i32) -> i32 {
 /// assert_eq!(multiply(0, 99), 0);
 /// ```
 fn multiply(_a: i32, _b: i32) -> i32 {
-    todo!("Implement multiply")
+    _a * _b
 }
 
 // ============================================================================
@@ -70,7 +70,7 @@ fn multiply(_a: i32, _b: i32) -> i32 {
 /// assert!(!is_even(7));
 /// ```
 fn is_even(_n: i32) -> bool {
-    todo!("Implement is_even")
+    _n % 2 == 0
 }
 
 // ============================================================================
@@ -86,7 +86,7 @@ fn is_even(_n: i32) -> bool {
 /// assert_eq!(max(5, 5), 5);
 /// ```
 fn max(_a: i32, _b: i32) -> i32 {
-    todo!("Implement max")
+    if _a > _b { _a } else { _b }
 }
 
 // ============================================================================
@@ -101,7 +101,7 @@ fn max(_a: i32, _b: i32) -> i32 {
 /// assert_eq!(square(0), 0);
 /// ```
 fn square(_n: i32) -> i32 {
-    todo!("Implement square")
+    _n * _n
 }
 
 // ============================================================================
@@ -116,7 +116,7 @@ fn square(_n: i32) -> i32 {
 /// assert_eq!(reverse_string(""), "");
 /// ```
 fn reverse_string(_s: &str) -> String {
-    todo!("Implement reverse_string")
+    _s.chars().rev().collect()
 }
 
 /// Joins words with the given separator.
@@ -127,7 +127,7 @@ fn reverse_string(_s: &str) -> String {
 /// assert_eq!(concat_with_separator(&[], ","), "");
 /// ```
 fn concat_with_separator(_words: &[&str], _sep: &str) -> String {
-    todo!("Implement concat_with_separator")
+     _words.join(_sep)
 }
 
 // ============================================================================
@@ -142,7 +142,7 @@ fn concat_with_separator(_words: &[&str], _sep: &str) -> String {
 /// assert_eq!(find_max_in_vec(&[]), None);
 /// ```
 fn find_max_in_vec(_numbers: &[i32]) -> Option<i32> {
-    todo!("Implement find_max_in_vec")
+    _numbers.iter().max().copied()
 }
 
 /// Returns the count of even numbers in the slice.
@@ -153,7 +153,7 @@ fn find_max_in_vec(_numbers: &[i32]) -> Option<i32> {
 /// assert_eq!(count_evens(&[]), 0);
 /// ```
 fn count_evens(_numbers: &[i32]) -> usize {
-    todo!("Implement count_evens")
+    _numbers.iter().filter(|&&n| n % 2 == 0).count()
 }
 
 // ============================================================================
@@ -340,3 +340,4 @@ mod tests {
         assert_eq!(count_evens(&[-2, -1, 0, 1, 2]), 3); // -2, 0, 2 are even
     }
 }
+
