@@ -86,7 +86,11 @@ fn is_even(_n: i32) -> bool {
 /// assert_eq!(max(5, 5), 5);
 /// ```
 fn max(_a: i32, _b: i32) -> i32 {
-    if _a > _b { _a } else { _b }
+    if _a > _b {
+        _a
+    } else {
+        _b
+    }
 }
 
 // ============================================================================
@@ -127,7 +131,7 @@ fn reverse_string(_s: &str) -> String {
 /// assert_eq!(concat_with_separator(&[], ","), "");
 /// ```
 fn concat_with_separator(_words: &[&str], _sep: &str) -> String {
-     _words.join(_sep)
+    _words.join(_sep)
 }
 
 // ============================================================================
@@ -340,4 +344,3 @@ mod tests {
         assert_eq!(count_evens(&[-2, -1, 0, 1, 2]), 3); // -2, 0, 2 are even
     }
 }
-
